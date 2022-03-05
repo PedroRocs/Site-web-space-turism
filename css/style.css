@@ -1,0 +1,105 @@
+/* RESET CSS  */
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    color: white;
+}
+
+h1,h2,p{
+    color: white;
+    font-size: 1em;
+    text-transform: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-image: url("/assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cabecalho{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0 0 55px;
+    margin-top: 40px;
+}
+
+.navbar::after{
+    content: "";
+    width: calc(100% - 900px) ;
+    height: 1px;
+    background-color: #fff;
+    order: 2;
+    flex-grow: 0;
+    transform: translate(30px,0px);
+}
+
+.logo{
+    order: 1;
+    flex-grow: 0;
+}
+
+.list-menu{
+    order: 3;
+    display: flex;
+    column-gap: 50px;
+    flex-grow: 1;
+    background-color: rgba(255,255, 255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px 0px;
+    justify-content: center;
+  
+}
+
+.list-menu li{
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+.items-da-list:nth-child(1)::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transform: translate(0, 45px);
+    display: block;
+}
+
+.items-da-list{
+    cursor: pointer;
+}
+.items-da-list:nth-last-child(-n+3)::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transform: translate(0, 45px);
+    display: block;
+    transition: 0.4s;
+    opacity: 0;
+    
+}
+ .items-da-list:nth-last-child(-n+3):hover::before{
+        opacity: 1;
+        width: 100%;
+        transition: 0.4s;
+    }
+    
