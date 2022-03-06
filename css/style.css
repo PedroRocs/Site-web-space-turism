@@ -55,6 +55,12 @@ body{
     flex-grow: 0;
 }
 
+.hamburguer {
+    display: block;
+    order: 2;
+    cursor: pointer;
+}
+
 .list-menu{
     order: 3;
     display: flex;
@@ -103,3 +109,47 @@ body{
         transition: 0.4s;
     }
     
+    /* RESPONSIVIDADE NAVBAR  */
+
+    @media screen and (max-width:768px){
+        
+        .navbar{
+            margin: 0;
+            padding: 0px 0px 0px 30px;
+        }
+        .list-menu{
+          padding: 30px;
+            flex-grow: 0;
+        }
+
+        .items-da-list b {
+            display: none;
+        }
+
+
+    }
+
+    @media screen and (max-width:375px){
+        .list-menu {
+
+            flex-direction: column;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            justify-content: flex-start;
+            row-gap: 20px;
+            width: 70%;
+        }
+
+        .items-da-list b {
+            display: inline-block; 
+        }
+      
+        .close-hamburguer{
+            width: 100%;
+            display: flex;
+           
+        }
+       
+    }
