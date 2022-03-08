@@ -154,7 +154,7 @@ body {
         flex-direction: column;
         height: 100%;
         position: absolute;
-        right: -300px;
+        right: -500px;
         top: 0;
         justify-content: flex-start;
         row-gap: 30px;
