@@ -9,6 +9,12 @@
     color: white;
 }
 
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
 h1,
 h2,
 p {
@@ -25,6 +31,7 @@ body {
     background-image: url("/assets/home/background-home-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .cabecalho {
@@ -170,3 +177,42 @@ body {
         padding-bottom: 10px;
     }
 }
+
+
+.landing-page{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 100%;
+    
+}
+
+.description{
+    justify-content: center;
+   display: flex;
+   flex-direction: column;
+   padding:0 160px;
+
+}
+
+.description h2{
+color:#D0D6F9 ;
+font-family: "Barlow Condensed", sans-serif;
+font-size: 28px;
+letter-spacing: 4.72px;
+}
+
+.description h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    font-weight: 300;
+    
+}
+
+.description p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px; 
+}
+
+
+
