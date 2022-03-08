@@ -90,7 +90,7 @@ body {
     letter-spacing: 2.5px;
 }
 
-.items-da-list:nth-child(1)::before {
+.items-da-list:nth-last-child(4):before {
     content: "";
     width: 100%;
     height: 4px;
