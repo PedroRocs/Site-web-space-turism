@@ -185,11 +185,12 @@ body {
     display: grid;
     grid-template-columns: 3fr 2fr;
     height: calc(100% - 140px);
+    padding-bottom: 100px;
     
 }
 
 .description{
-    justify-content: center;
+    justify-content: flex-end;
    display: flex;
    flex-direction: column;
    padding:0 160px;
@@ -201,6 +202,7 @@ color:#D0D6F9 ;
 font-family: "Barlow Condensed", sans-serif;
 font-size: 28px;
 letter-spacing: 4.72px;
+margin-bottom: 20px;
 }
 
 .description h1 {
@@ -212,14 +214,17 @@ letter-spacing: 4.72px;
 
 .description p {
     font-family: "Barlow Condensed", sans-serif;
-    font-size: 18px; 
+    font-size: 24px; 
+    line-height: 32px;
+    margin-top: 30px;
+    font-weight: 100;
 }
 
 .button-explorer{
     display: flex;
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: center
 }
 
 .btn{
