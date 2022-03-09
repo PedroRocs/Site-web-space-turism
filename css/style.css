@@ -27,11 +27,14 @@ li {
     list-style: none;
 }
 
+
+
 body {
     background-image: url("/assets/home/background-home-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    
 }
 
 .cabecalho {
@@ -213,6 +216,32 @@ letter-spacing: 4.72px;
     font-family: "Barlow Condensed", sans-serif;
     font-size: 18px; 
 }
+
+.button-explorer{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #fff;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 32px;
+   font-family: 'Bellefair', serif;
+   border: 10px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
 
 
 
