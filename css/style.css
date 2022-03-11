@@ -237,9 +237,33 @@ margin-bottom: 20px;
     align-items: center;
     color: black;
     font-size: 32px;
-   font-family: 'Bellefair', serif;
-   border: 10px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Bellefair', serif;
+    margin-bottom: calc(100vh - 95vh);
 }
+
+.btn::before{
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.button-explorer:hover .btn::before{
+    opacity: 1;
+    width: 450px;
+    height: 450px;
+}
+
+
+
+
+
+
 
 
 
