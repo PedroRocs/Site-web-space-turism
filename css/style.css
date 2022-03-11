@@ -162,12 +162,21 @@ body {
     .list-menu {
         flex-direction: column;
         height: 100%;
-        position: absolute;
-        right: -500px;
+        position: fixed;
+        right: 0;
         top: 0;
         justify-content: flex-start;
         row-gap: 30px;
         display: flex;
+        width: 0%;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .list-menu.active {
+        opacity: 1;
+        width: 70%;
+        transition: 1s;
     }
     .items-da-list b {
         display: inline-block;
@@ -177,6 +186,7 @@ body {
         display: flex;
         justify-content: right;
         padding-bottom: 10px;
+      
     }
 }
 
