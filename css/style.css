@@ -12,6 +12,7 @@
 
 html{
     height: 100vh;
+    
 }
 
 h1,
@@ -34,6 +35,8 @@ body {
     background-repeat: no-repeat;
     height: 100%;
     overflow-x: hidden;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .cabecalho {
