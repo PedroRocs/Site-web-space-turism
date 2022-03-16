@@ -239,6 +239,7 @@ margin-bottom: 20px;
     font-family: 'Bellefair', serif;
     font-size: 150px;
     font-weight: 300;
+   
     
 }
 
@@ -362,6 +363,16 @@ PAGINA DESTINATION
  <=================  
  */
 
+ @keyframes animation {
+     0%{
+         opacity: 0;
+     }
+
+     100%{
+         opacity: 1;
+     }
+ }
+
  .principal{
      display: grid;
      grid-template-areas: 
@@ -416,12 +427,14 @@ PAGINA DESTINATION
 
  .planet img {
     width: calc(100%-300px);
+   
  }
  .nome-planet h2{
      display: inline-block;
      font-size: 1em;
      margin-right: 15px;
      color: #D0D6F9;
+     
  }
 
  .nome-planet h2:nth-child(1):after{
@@ -448,6 +461,7 @@ PAGINA DESTINATION
  .titulo-descricao-planeta h2{
     font-size: 6.25em;
     font-family: 'Bellefair', serif;
+    
  }
 
  .titulo-descricao-planeta p {
