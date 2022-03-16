@@ -21,6 +21,8 @@ p {
     color: white;
     font-size: 1em;
     text-transform: none;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: 1.3em;
 }
 
 li {
@@ -29,8 +31,8 @@ li {
 
 
 
-body {
-    background-image: url("/assets/home/background-home-desktop.jpg");
+body,#corpo-destination{
+    background-image: url("/assets/destination/background-destination-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -355,6 +357,130 @@ margin-bottom: 20px;
     
 
 }
+/* 
+==================> 
+PAGINA DESTINATION 
+ <=================  
+ */
+
+ .principal{
+     display: grid;
+     grid-template-areas: 
+     'cabecalho cabecalho'
+     'planeta descricao-planeta';
+     grid-template-rows: 2fr 5fr ;
+     grid-auto-flow: column;
+     grid-template-columns: 540px 500px;
+     align-items: center;
+     justify-content: center;
+     
+     
+     
+ 
+ }
+ .cabecalho-destino{
+     grid-area: cabecalho;
+     font-size: 1.3em;
+     font-family: 'Barlow Condensed',sans-serif;
+ }
+
+ .cabecalho-destino h2{
+    display: inline-block;
+    font-size: 1.3em;
+    letter-spacing: 4.22px;
+    font-family: 'Barlow Condensed',sans-serif;
+  
+ }
+ .cabecalho-destino span {
+     color: rgba(255, 255, 255, 0.25);
+     font-weight: 900;
+     display: inline-block;
+     font-size: 1.3em;
+     margin-right: 20px;
+ }
+ .info-planet{
+     grid-area: descricao-planeta;
+     display: flex;
+     row-gap: 30px;
+     flex-direction: column;
+     padding: 0 40px;
+ }
+
+ .planet {
+     grid-area: planeta;
+ }
+
+ .planet img {
+    width: 450px;
+ }
+ .nome-planet h2{
+     display: inline-block;
+     font-size: 1em;
+     margin-right: 15px;
+     color: #D0D6F9;
+ }
+
+ .nome-planet h2:nth-child(1):after{
+     content: "";
+     width: 100%;
+     height: 3px;
+     background-color: #fff;
+     display: inline-block;
+     opacity: 1;
+ }
+
+ .nome-planet h2:nth-last-child(-n+3):after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    display: inline-block;
+    opacity: 0;
+ }
+
+ .titulo-descricao-planeta {
+     margin-bottom: 20px;
+ }
+ .titulo-descricao-planeta h2{
+    font-size: 6.25em;
+    font-family: 'Bellefair', serif;
+ }
+
+ .titulo-descricao-planeta p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1em;
+    color: #D0D6F9;
+    line-height: 32px;
+ }
+
+ .info-adicionais{
+     border-top: 1px solid #979797;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     padding: 30px 0;
+ }
+
+ .info-adicionais div {
+     display: flex;
+     flex-direction: column;
+     row-gap: 20px;
+ }
+
+ .info-adicionais span {
+    color:#D0D6F9;
+    font-size: 0.9em;
+    letter-spacing: 2.36px;
+    font-family: 'Barlow Condensed',sans-serif;
+ }
+
+ .info-adicionais span#distance-info,span#time-distance{
+    font-size: 1.625em;
+    color: #fff;
+    font-family: 'Ballefair';
+ } 
+
+
+ 
 
 
 

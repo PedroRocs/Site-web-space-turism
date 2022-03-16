@@ -7,15 +7,17 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body>
+<body id="corpo-destination">
   <header class="cabecalho">
     <nav class="navbar">
 
@@ -50,32 +52,41 @@
   </header>
 
   <main class="principal">
-<div class="cabelalho-destino">Pick your destination</div>
-    
+    <div class="cabecalho-destino"> <span>01</span>
+      <h2>PICK YOUR DESTINATION</h2>
+    </div>
+
     <aside class="planet">
-     <img src="assets/destination/image-moon.png" alt="" srcset="">
+      <img src="assets/destination/image-moon.png" alt="" srcset="">
     </aside>
-    
+
     <section class="info-planet">
-    <div class="nome-planetas"></div>
-    <div class="titulo-descricao planeta">
+      <div class="nome-planet">
         <h2>MOON</h2>
-        <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
-    </div>
-    
-    <div class="info-adicionais">
-<div class="distance">
-    <span></span> DISTANCE
-    <span id="distance-info"> 384,400 km</span>
-</div>
-<div class="time-distance">
-  <span>Est. travel time</span>
-  <span id="time-distance"> 3 days </span>
-</div>
-    </div>
+        <h2>MARS</h2>
+        <h2>JUPITER</h2>
+        <h2>URANO</h2>
+      </div>
+      <div class="titulo-descricao-planeta">
+        <h2>MOON</h2>
+        <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and
+          come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing
+          sites.
+        </p>
+      </div>
+
+      <div class="info-adicionais">
+        <div>
+          <span>AVG. DISTANCE</span>
+          <span id="distance-info"> 384,400 KM</span>
+        </div>
+        <div>
+          <span>EST. TRAVEL LIMA</span>
+          <span id="time-distance"> 3 DAYS </span>
+        </div>
+      </div>
     </section>
   </main>
-  <script src="js/home.js"></script>384,400 km
+  <script src="js/home.js"></script>
 </body>
-
 </html>
