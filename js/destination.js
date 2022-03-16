@@ -18,7 +18,6 @@ fetch(url)
             distance.innerHTML=dados[i].distance;
             tempo.innerHTML=dados[i].travel;
             img.src=dados[i].images.png;
-            
         });
     }
   

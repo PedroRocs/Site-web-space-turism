@@ -11,7 +11,8 @@
 
 
 html{
-    height: 100%;
+    min-height: 100%;
+    max-height: auto;
 }
 
 h1,
