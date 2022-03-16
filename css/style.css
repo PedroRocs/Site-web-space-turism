@@ -11,8 +11,7 @@
 
 
 html{
-    height: 100vh;
-    
+    height: 100%;
 }
 
 h1,
@@ -373,6 +372,7 @@ PAGINA DESTINATION
      grid-template-columns: 540px 500px;
      align-items: center;
      justify-content: center;
+     padding: 0 10px;
      
      
      
@@ -408,10 +408,14 @@ PAGINA DESTINATION
 
  .planet {
      grid-area: planeta;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
  }
 
  .planet img {
-    width: 450px;
+    width: calc(100%-300px);
  }
  .nome-planet h2{
      display: inline-block;
@@ -458,6 +462,7 @@ PAGINA DESTINATION
      display: grid;
      grid-template-columns: 1fr 1fr;
      padding: 30px 0;
+     
  }
 
  .info-adicionais div {
@@ -480,6 +485,68 @@ PAGINA DESTINATION
  } 
 
 
+ @media only screen and (max-width:1074px){
+
+    .principal{
+        width: 100%;
+       grid-template-areas:
+       'cabecalho cabecalho '
+       'planeta planeta'
+       'descricao-planeta descricao-planeta';
+    justify-items: flex-start;
+    align-items: center;
+    grid-template-columns:100%;
+    }
+
+    .info-planet{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo-descricao-planeta{
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .nome-planet{
+        margin-top: 50px;
+    }
+    .info-adicionais {
+       width: 100%;
+        align-items: center;
+        justify-content: center;
+   
+    }
+
+    .info-adicionais div{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+}
+@media only screen and (max-width:500px){
+    .principal{
+        justify-items: center;
+    }
+    .info-adicionais{
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .cabecalho-destino{
+        font-size: 0.9em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .planet img{
+        width: 300px;
+    }
+     .titulo-descricao-planeta{
+        font-size: 0.8em;
+    }
+}
  
 
 
