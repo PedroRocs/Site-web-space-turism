@@ -77,7 +77,15 @@ fetch(url)
                 contadoraAnterior = i;
             });
         }})
-
     .catch(function (error) {
         window.innerHTML = "Recarregue a pegina";
     });
+
+
+    
+
+       
+
+    
+
+   

@@ -12,3 +12,35 @@ closeNavBar.addEventListener('click', () =>{
     navBar.classList.remove('active');
     
 })
+
+function link(parametro){
+       
+    let items=document.querySelectorAll(".items-da-list");
+     if(parametro == "/destination.html"){
+         items[1].classList.add("ativado");
+         if(items[1].classList.length == 2){
+             items[0].classList.add("disabled");
+             items[2].classList.add("disabled");
+             items[3].classList.add("disabled");
+             
+         }
+      
+     }
+     else if(parametro == "/index.html"){
+         console.log("teste")
+         items[0].classList.add("ativado");
+         if(items[0].classList.length == 2 ){
+             items[1].classList.add("disabled");
+             items[2].classList.add("disabled");
+             items[3].classList.add("disabled");
+             
+     }
+    
+ }        
+     if(parametro == "/crew-commander.html"){}
+     if(parametro == "/techonology-capsule.html"){}
+     if(parametro == "/destination.html"){}
+    
+ }
+
+ link(window.location.pathname);
