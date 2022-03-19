@@ -452,6 +452,8 @@ PAGINA DESTINATION
 
  .planet img {
     width: calc(100%-300px);
+    animation: 1.5s animation;
+
    
  }
  .nome-planet h2{
@@ -460,28 +462,35 @@ PAGINA DESTINATION
      margin-right: 15px;
      color: #D0D6F9;
      cursor: pointer;
-  
      
  }
-
- .nome-planet h2.after{
-     content: "";
-     width: 100%;
-     height: 3px;
-     background-color: #fff;
-     display: inline-block;
-     opacity: 1;
+ .nome-planet h2::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    display: inline-block;
+    opacity: 0;
  }
 
+ .nome-planet h2.after::after{
+    opacity: 1;
+    animation: 1.5s animation;
+ }
 
+.transição{
+    animation: 1.5s animation;
+}
 
  .titulo-descricao-planeta {
      margin-bottom: 20px;
+     animation: 1.5s animation;
  }
  .titulo-descricao-planeta h2{
     font-size: 6.25em;
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
+    animation: 1.5s animation;
     
  }
 
@@ -490,6 +499,8 @@ PAGINA DESTINATION
     font-size: 1.1em;
     color: #D0D6F9;
     line-height: 32px;
+    animation: 1.5s animation;
+ 
  }
 
  .info-adicionais{
@@ -504,20 +515,28 @@ PAGINA DESTINATION
      display: flex;
      flex-direction: column;
      row-gap: 20px;
+     animation: 1.5s animation;
+     
  }
 
- .info-adicionais span {
+ .info-adicionais span:nth-child(1) {
     color:#D0D6F9;
     font-size: 0.9em;
     letter-spacing: 2.36px;
     font-family: 'Barlow Condensed',sans-serif;
     text-transform: uppercase;
+   
+  
  }
 
- .info-adicionais span#distance-info,span#time-distance{
+ .info-adicionais  span:nth-child(2){
     font-size: 1.625em;
     color: #fff;
     font-family: 'Ballefair';
+    text-transform: uppercase;
+    transition: 1s;
+    animation: 1.5s animation;
+    
  } 
 
 
