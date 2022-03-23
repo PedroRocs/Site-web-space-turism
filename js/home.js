@@ -37,7 +37,14 @@ function link(parametro){
      }
     
  }        
-     if(parametro == "/crew-commander.html"){}
+     else if(parametro == "/crew-commander.html"){
+        items[2].classList.add("ativado");
+        if(items[2].classList.length == 2 ){
+            items[1].classList.add("disabled");
+            items[0].classList.add("disabled");
+            items[3].classList.add("disabled");
+     }
+    }
      if(parametro == "/techonology-capsule.html"){}
      if(parametro == "/destination.html"){}
     
