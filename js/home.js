@@ -24,6 +24,7 @@ function link(parametro){
              items[3].classList.add("disabled");
              
          }
+         
       
      }
      else if(parametro == "/index.html"){

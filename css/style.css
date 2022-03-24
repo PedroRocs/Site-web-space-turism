@@ -558,7 +558,7 @@ PAGINA DESTINATION
         align-items: center;
         justify-content: center;
     }
-    .titulo-descricao-planeta{
+    .titulo-descricao-people{
         text-align: center;
         font-size: 0.9em;
     }
@@ -602,6 +602,38 @@ PAGINA DESTINATION
         font-size: 0.8em;
     }
 }
+
+/* 
+========================== > 
+PAGINA CREW COMMANDER   
+ < ========================
+*/
+
+.principal-crew{
+    display: grid;
+     grid-template-areas: 
+     'cabecalho cabecalho'
+     'image-people info-people';
+     grid-template-rows: 2fr 5fr ;
+     grid-auto-flow: column;
+     grid-template-columns: 540px 500px;
+     align-items: center;
+     justify-content: center;
+     padding: 0 10px;
+}
+
+.info-people{
+    grid-area: info-people;
+}
+
+.img-people{
+    grid-area: image-people;
+}
+
+
+
+
+
  
 
 
