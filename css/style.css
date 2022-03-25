@@ -45,6 +45,10 @@ li {
     border-radius: 20px;
 }
 
+#corpo-crew{
+    background-image: url("/assets/crew/background-crew-desktop.jpg");
+}
+
 body{
     background-image: url("/assets/home/background-home-desktop.jpg");
     background-size: cover;
@@ -491,6 +495,7 @@ PAGINA DESTINATION
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
     animation: 1.5s animation;
+    text-align: center;
     
  }
 
@@ -612,23 +617,74 @@ PAGINA CREW COMMANDER
 .principal-crew{
     display: grid;
      grid-template-areas: 
-     'cabecalho cabecalho'
-     'image-people info-people';
-     grid-template-rows: 2fr 5fr ;
-     grid-auto-flow: column;
-     grid-template-columns: 540px 500px;
-     align-items: center;
-     justify-content: center;
-     padding: 0 10px;
+     'cabecalho image-people'
+     'info-people image-people';
+     grid-template-rows: 1fr 5fr ;
+     grid-template-columns: 2fr 2fr;
+     align-items: flex-end;
+     column-gap: 60px;
+     padding: 40px 90px 0px 90px;
 }
 
 .info-people{
     grid-area: info-people;
+    row-gap: 90px;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-people{
     grid-area: image-people;
+    display: flex;
+    justify-content: flex-end;
+    
 }
+
+
+.description-crew h3 {
+    font-size: 2em;
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.description-crew h2 {
+    font-size: 3.5em;
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.description-crew p{
+    font-size: 1.4em;
+    line-height: 32px;
+    width: calc(100% - 140px);
+    padding: 0 10px;
+    font-weight: lighter;
+}
+
+.content-pont{
+    display: flex;
+    height: 100px;
+}
+
+.bolinha{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.img-people img{
+    
+    width:500px;
+}
+/* 
+@media only screen and (max-width:) {
+    
+} */
+
 
 
 
