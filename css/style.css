@@ -620,10 +620,10 @@ PAGINA CREW COMMANDER
      'cabecalho image-people'
      'info-people image-people';
      grid-template-rows: 1fr 5fr ;
-     grid-template-columns: 2fr 2fr;
+     grid-template-columns: 3fr 2fr;
      align-items: flex-end;
      column-gap: 60px;
-     padding: 40px 90px 0px 90px;
+     padding: 130px 90px 0px 90px;
 }
 
 .info-people{
@@ -637,15 +637,27 @@ PAGINA CREW COMMANDER
     grid-area: image-people;
     display: flex;
     justify-content: flex-end;
-    
 }
 
+.img-people img{
+    animation: 1s animation;
+}
+
+
+.description-crew {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
 
 .description-crew h3 {
     font-size: 2em;
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
     margin-bottom: 32px;
+    animation: 1s animation;
 }
 
 .description-crew h2 {
@@ -653,6 +665,7 @@ PAGINA CREW COMMANDER
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
     margin-bottom: 40px;
+    animation: 1s animation
 }
 
 .description-crew p{
@@ -661,6 +674,7 @@ PAGINA CREW COMMANDER
     width: calc(100% - 140px);
     padding: 0 10px;
     font-weight: lighter;
+    animation: 1s animation
 }
 
 .content-pont{
@@ -671,15 +685,16 @@ PAGINA CREW COMMANDER
 .bolinha{
     width: 20px;
     height: 20px;
-    background-color: #fff;
+   background-color: #222;
     margin-right: 20px;
     border-radius: 50%;
 }
 
-.img-people img{
-    
-    width:500px;
+
+.bolinha.after{
+    background-color: #fff;
 }
+
 /* 
 @media only screen and (max-width:) {
     
