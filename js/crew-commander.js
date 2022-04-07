@@ -2,7 +2,8 @@ const url = "https://pedro2862.github.io/jsonData.github.io/data.json";
 let descriptionCrew = document.querySelector(".description-crew");
 let imgCrew = document.querySelector(".img-people");
 let bolinhas = document.querySelectorAll(".bolinha");
-console.log(bolinhas,descriptionCrew);
+console.log(bolinhas[0].classList);
+
 
 fetch(url)
     .then((resp) => resp.json())
@@ -44,14 +45,15 @@ fetch(url)
             }
 
             bolinhas[i].addEventListener("click", () => {
-                if (bolinhas[0].classList == "after" && i == 1) {
+                if (bolinhas[0].classList == "bolinha","after" && i == 1) {
                     bolinhas[0].classList.remove("after");
+                    console.log("removeu")
                 }
                 descriptionCrew.appendChild(createElement("h3"));
                descriptionCrew.appendChild(createElement("h2"));
                descriptionCrew.appendChild(createElement("p"));
                 imgCrew.appendChild(createElement("img"));
-
+                
                 bolinhas[i].classList.add("after");
                 if (contadoraAnterior != undefined) {
                     bolinhas[contadoraAnterior].classList.remove("after");

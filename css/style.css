@@ -18,11 +18,11 @@ p {
     color: white;
     font-size: 1em;
     text-transform: none;
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.3em;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -33,23 +33,24 @@ li {
 
 
 
-#corpo-destination::-webkit-scrollbar{
+#corpo-destination::-webkit-scrollbar {
     width: 5px;
 }
 
-#corpo-destination::-webkit-scrollbar-track{
-  background-color: #222;
+#corpo-destination::-webkit-scrollbar-track {
+    background-color: #222;
 }
-#corpo-destination::-webkit-scrollbar-thumb{
+
+#corpo-destination::-webkit-scrollbar-thumb {
     background-color: #fff;
     border-radius: 20px;
 }
 
-#corpo-crew{
+#corpo-crew {
     background-image: url("/assets/crew/background-crew-desktop.jpg");
 }
 
-body{
+body {
     background-image: url("/assets/home/background-home-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,7 +59,7 @@ body{
     margin: 0 auto;
 }
 
-#corpo-destination{
+#corpo-destination {
     background-image: url("/assets/destination/background-destination-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -171,13 +172,16 @@ body{
         margin: 0;
         padding: 0 0 0 39px;
     }
+
     .navbar::after {
         display: none;
     }
+
     .list-menu {
         padding: 40px 30px;
         flex-grow: 0;
     }
+
     .items-da-list b {
         display: none;
     }
@@ -187,18 +191,22 @@ body{
     body {
         background-color: black;
     }
-    .hamburguer svg{
+
+    .hamburguer svg {
         width: 30%;
         display: flex;
         justify-content: end;
-    
+
     }
+
     .hamburguer {
         display: flex;
     }
+
     .navbar {
         padding: 20px;
     }
+
     .list-menu {
         flex-direction: column;
         height: 100%;
@@ -219,12 +227,14 @@ body{
         transition: 0.4s;
     }
 
-    .items-da-list:nth-last-child(n-3):before{
+    .items-da-list:nth-last-child(n-3):before {
         display: none;
     }
+
     .items-da-list b {
         display: inline-block;
     }
+
     .close-hamburguer {
         width: 100%;
         display: flex;
@@ -233,61 +243,61 @@ body{
         height: 40px;
         padding: 0px 30px;
         cursor: pointer;
-      
+
     }
 }
 
 
-.landing-page{
+.landing-page {
     width: 100%;
     display: grid;
     grid-template-columns: 3fr 2fr;
     min-height: 90vh;
     padding-bottom: 90px;
-    
-    
+
+
 }
 
-.description{
+.description {
     justify-content: flex-end;
-   display: flex;
-   flex-direction: column;
-   padding:0 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 160px;
 
 }
 
-.description h2{
-color:#D0D6F9 ;
-font-family: "Barlow Condensed", sans-serif;
-font-size: 28px;
-letter-spacing: 4.72px;
-margin-bottom: 20px;
+.description h2 {
+    color: #D0D6F9;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    margin-bottom: 20px;
 }
 
 .description h1 {
     font-family: 'Bellefair', serif;
     font-size: 150px;
     font-weight: 300;
-   
-    
+
+
 }
 
 .description p {
     font-family: "Barlow Condensed", sans-serif;
-    font-size: 24px; 
+    font-size: 24px;
     line-height: 32px;
     margin-top: 30px;
     font-weight: 100;
 }
 
-.button-explorer{
+.button-explorer {
     display: flex;
     height: 100%;
     align-items: flex-end;
     justify-content: center
 }
 
-.btn{
+.btn {
     background-color: #fff;
     width: 274px;
     height: 274px;
@@ -301,7 +311,7 @@ margin-bottom: 20px;
     margin-bottom: calc(100vh - 95vh);
 }
 
-.btn::before{
+.btn::before {
     position: absolute;
     content: "";
     background-color: rgba(255, 255, 255, 0.2);
@@ -313,298 +323,314 @@ margin-bottom: 20px;
     transition: 0.4s;
 }
 
-.button-explorer:hover .btn::before{
+.button-explorer:hover .btn::before {
     opacity: 1;
     width: 450px;
     height: 450px;
 }
 
-@media only screen  and (max-width:1050px){
-    body{
+@media only screen and (max-width:1050px) {
+    body {
         background-image: url("/assets/home/background-home-tablet.jpg");
     }
-    
-    .landing-page{
+
+    .landing-page {
         grid-template-columns: 100%;
         padding: 20px 30px;
         row-gap: 110px;
     }
 
-    .description{
+    .description {
         padding: 0;
         justify-content: center;
         align-items: center;
     }
 
-    .description p{ 
+    .description p {
         text-align: center;
-        width: calc( 100% - 130px);
-        
+        width: calc(100% - 130px);
+
     }
 
-    .button-explorer{
+    .button-explorer {
         justify-content: center;
         align-items: center;
     }
-    .btn{
+
+    .btn {
         align-items: center;
         justify-content: center;
         margin: 0;
     }
 }
 
-@media only screen  and (max-width:550px){
-  body {
-      background-image: url("/assets/home/background-home-mobile.jpg");
-  }
-  .landing-page{
-      row-gap: 20px;
-  }
+@media only screen and (max-width:550px) {
+    body {
+        background-image: url("/assets/home/background-home-mobile.jpg");
+    }
+
+    .landing-page {
+        row-gap: 20px;
+    }
+
     .description h1 {
         font-size: 5em;
     }
-    .description p{
+
+    .description p {
         font-size: 1.4em;
         width: 100%;
     }
 
-    .description h2{
+    .description h2 {
         font-size: 1.1em;
     }
 
-    .btn{
+    .btn {
         width: 200px;
         height: 200px;
         font-size: 1.3em;
     }
 
-    .button-explorer:hover .btn::before{
+    .button-explorer:hover .btn::before {
         width: 250px;
         height: 250px;
     }
 
-    
+
 
 }
+
 /* 
 ==================> 
 PAGINA DESTINATION 
  <=================  
  */
 
- @keyframes animation {
-     0%{
-         opacity: 0;
-     }
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
 
-     100%{
-         opacity: 1;
-     }
- }
+    100% {
+        opacity: 1;
+    }
+}
 
- .principal{
-     display: grid;
-     grid-template-areas: 
-     'cabecalho cabecalho'
-     'planeta descricao-planeta';
-     grid-template-rows: 2fr 5fr ;
-     grid-auto-flow: column;
-     grid-template-columns: 540px 500px;
-     align-items: center;
-     justify-content: center;
-     padding: 0 10px;
-     
-     
-     
- 
- }
- .cabecalho-destino{
-     grid-area: cabecalho;
-     font-size: 1.3em;
-     font-family: 'Barlow Condensed',sans-serif;
- }
+.principal {
+    display: grid;
+    grid-template-areas:
+        'cabecalho cabecalho'
+        'planeta descricao-planeta';
+    grid-template-rows: 2fr 5fr;
+    grid-auto-flow: column;
+    grid-template-columns: 540px 500px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
 
- .cabecalho-destino h2{
+
+
+
+}
+
+.cabecalho-destino {
+    grid-area: cabecalho;
+    font-size: 1.3em;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.cabecalho-destino h2 {
     display: inline-block;
     font-size: 1.3em;
     letter-spacing: 4.22px;
-    font-family: 'Barlow Condensed',sans-serif;
-  
- }
- .cabecalho-destino span {
-     color: rgba(255, 255, 255, 0.25);
-     font-weight: 900;
-     display: inline-block;
-     font-size: 1.3em;
-     margin-right: 20px;
- }
- .info-planet{
-     grid-area: descricao-planeta;
-     display: flex;
-     row-gap: 30px;
-     flex-direction: column;
-     padding: 0 40px;
- }
+    font-family: 'Barlow Condensed', sans-serif;
 
- .planet {
-     grid-area: planeta;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     width: 100%;
- }
+}
 
- .planet img {
+.cabecalho-destino span {
+    color: rgba(255, 255, 255, 0.25);
+    font-weight: 900;
+    display: inline-block;
+    font-size: 1.3em;
+    margin-right: 20px;
+}
+
+.info-planet {
+    grid-area: descricao-planeta;
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.planet {
+    grid-area: planeta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.planet img {
     width: calc(100%-300px);
     animation: 1.5s animation;
 
-   
- }
- .nome-planet h2{
-     display: inline-block;
-     font-size: 1em;
-     margin-right: 15px;
-     color: #D0D6F9;
-     cursor: pointer;
-     
- }
- .nome-planet h2::after{
+
+}
+
+.nome-planet h2 {
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 15px;
+    color: #D0D6F9;
+    cursor: pointer;
+
+}
+
+.nome-planet h2::after {
     content: "";
     width: 100%;
     height: 3px;
     background-color: #fff;
     display: inline-block;
     opacity: 0;
- }
+}
 
- .nome-planet h2.after::after{
+.nome-planet h2.after::after {
     opacity: 1;
-    animation: 1.5s animation;
- }
-
-.transição{
     animation: 1.5s animation;
 }
 
- .titulo-descricao-planeta {
-     margin-bottom: 20px;
-     animation: 1.5s animation;
- }
- .titulo-descricao-planeta h2{
+.transição {
+    animation: 1.5s animation;
+}
+
+.titulo-descricao-planeta {
+    margin-bottom: 20px;
+    animation: 1.5s animation;
+}
+
+.titulo-descricao-planeta h2 {
     font-size: 6.25em;
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
     animation: 1.5s animation;
-    text-align: center;
-    
- }
+}
 
- .titulo-descricao-planeta p {
+.titulo-descricao-planeta p {
     font-family: 'Barlow', sans-serif;
     font-size: 1.1em;
     color: #D0D6F9;
     line-height: 32px;
     animation: 1.5s animation;
- 
- }
 
- .info-adicionais{
-     border-top: 1px solid #979797;
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     padding: 30px 0;
-     
- }
+}
 
- .info-adicionais div {
-     display: flex;
-     flex-direction: column;
-     row-gap: 20px;
-     animation: 1.5s animation;
-     
- }
+.info-adicionais {
+    border-top: 1px solid #979797;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 0;
 
- .info-adicionais span:nth-child(1) {
-    color:#D0D6F9;
+}
+
+.info-adicionais div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    animation: 1.5s animation;
+
+}
+
+.info-adicionais span:nth-child(1) {
+    color: #D0D6F9;
     font-size: 0.9em;
     letter-spacing: 2.36px;
-    font-family: 'Barlow Condensed',sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-   
-  
- }
 
- .info-adicionais  span:nth-child(2){
+
+}
+
+.info-adicionais span:nth-child(2) {
     font-size: 1.625em;
     color: #fff;
     font-family: 'Ballefair';
     text-transform: uppercase;
     transition: 1s;
     animation: 1.5s animation;
-    
- } 
+
+}
 
 
- @media only screen and (max-width:1074px){
+@media only screen and (max-width:1074px) {
 
-    .principal{
+    .principal {
         width: 100%;
-       grid-template-areas:
-       'cabecalho cabecalho '
-       'planeta planeta'
-       'descricao-planeta descricao-planeta';
-    justify-items: flex-start;
-    align-items: center;
-    grid-template-columns:100%;
+        grid-template-areas:
+            'cabecalho cabecalho '
+            'planeta planeta'
+            'descricao-planeta descricao-planeta';
+        justify-items: flex-start;
+        align-items: center;
+        grid-template-columns: 100%;
     }
 
-    .info-planet{
+    .titulo-descricao-planeta h2 {
+        text-align: center;
+    }
+
+    .info-planet {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .titulo-descricao-people{
-        text-align: center;
-        font-size: 0.9em;
-    }
 
-    .nome-planet{
+    .nome-planet {
         margin-top: 50px;
-    }
-    .info-adicionais {
-       width: 100%;
-        align-items: center;
-        justify-content: center;
-   
+
     }
 
-    .info-adicionais div{
+    .info-adicionais {
         width: 100%;
         align-items: center;
         justify-content: center;
-        
-        
+
+    }
+
+    .info-adicionais div {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+
     }
 }
-@media only screen and (max-width:500px){
-    .principal{
+
+@media only screen and (max-width:500px) {
+    .principal {
         justify-items: center;
     }
-    .info-adicionais{
+
+    .info-adicionais {
         grid-template-columns: 1fr;
         row-gap: 40px;
     }
-    .cabecalho-destino{
+
+    .cabecalho-destino {
         font-size: 0.9em;
         align-items: center;
         justify-content: center;
     }
 
-    .planet img{
+    .planet img {
         width: 300px;
     }
-     .titulo-descricao-planeta{
+
+    .titulo-descricao-planeta {
         font-size: 0.8em;
+        text-align: center;
     }
 }
 
@@ -614,32 +640,32 @@ PAGINA CREW COMMANDER
  < ========================
 */
 
-.principal-crew{
+.principal-crew {
     display: grid;
-     grid-template-areas: 
-     'cabecalho image-people'
-     'info-people image-people';
-     grid-template-rows: 1fr 5fr ;
-     grid-template-columns: 3fr 2fr;
-     align-items: flex-end;
-     column-gap: 60px;
-     padding: 130px 90px 0px 90px;
+    grid-template-areas:
+        'cabecalho image-people'
+        'info-people image-people';
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 3fr 2fr;
+    align-items: flex-end;
+    column-gap: 60px;
+    padding: 130px 90px 0px 90px;
 }
 
-.info-people{
+.info-people {
     grid-area: info-people;
     row-gap: 90px;
     display: flex;
     flex-direction: column;
 }
 
-.img-people{
+.img-people {
     grid-area: image-people;
     display: flex;
     justify-content: flex-end;
 }
 
-.img-people img{
+.img-people img {
     animation: 1s animation;
 }
 
@@ -649,7 +675,7 @@ PAGINA CREW COMMANDER
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 
 .description-crew h3 {
@@ -668,7 +694,7 @@ PAGINA CREW COMMANDER
     animation: 1s animation
 }
 
-.description-crew p{
+.description-crew p {
     font-size: 1.4em;
     line-height: 32px;
     width: calc(100% - 140px);
@@ -677,21 +703,22 @@ PAGINA CREW COMMANDER
     animation: 1s animation
 }
 
-.content-pont{
+.content-pont {
     display: flex;
     height: 100px;
 }
 
-.bolinha{
+.bolinha {
     width: 20px;
     height: 20px;
-   background-color: #222;
+    background-color: #222;
     margin-right: 20px;
     border-radius: 50%;
 }
 
 
-.bolinha.after{
+
+.bolinha.after {
     background-color: #fff;
 }
 
@@ -699,22 +726,3 @@ PAGINA CREW COMMANDER
 @media only screen and (max-width:) {
     
 } */
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
