@@ -1,41 +1,60 @@
 const url = "https://pedro2862.github.io/jsonData.github.io/data.json";
-const descricaoPlaneta = document.querySelector(".titulo-descricao-planeta");
-const distanceInfo = document.querySelector("#distance-info");
-const tempoDistance = document.querySelector("#time-distance");
-const image = document.querySelector(".planet");
-const opcao = document.querySelectorAll(".nome-planet h2");
-
+let descriptionCrew = document.querySelector(".description-crew");
+let imgCrew = document.querySelector(".img-people");
+let bolinhas = document.querySelectorAll(".bolinha");
+console.log(bolinhas,descriptionCrew);
 
 fetch(url)
     .then((resp) => resp.json())
     .then(function (data) {
         let dados = data.crew;
         let contadoraAnterior;
-        for (let i = 0; i < opcao.length; i++) {
+        for (let i = 0; i < bolinhas.length; i++) {
 
             function createElement(element) {
 
                 if (element == "h2") {
-                    descricaoPlaneta.innerHTML = "";
+                   
                     let h2 = document.createElement(element);
                     h2.textContent = dados[i].name;
                     return h2
                 }
 
+                if (element == "h3") {
+                    descriptionCrew.innerHTML = "";
+                     let h3 = document.createElement(element);
+                     h3.textContent = dados[i].role;               ;
+                     return h3
+                 }
+
+                 if (element == "p") {
+                  
+                     let p = document.createElement(element);
+                     p.textContent = dados[i].bio;
+                     return p
+                 }
+
+                 if (element == "img") {
+                  imgCrew.innerHTML="";
+                    let img = document.createElement(element);
+                    img.src=dados[i].images.png
+                    return img
+                }
+
             }
 
-            opcao[i].addEventListener("click", () => {
-                if (opcao[0].classList == "after" && i == 1) {
-                    opcao[0].classList.remove("after");
+            bolinhas[i].addEventListener("click", () => {
+                if (bolinhas[0].classList == "after" && i == 1) {
+                    bolinhas[0].classList.remove("after");
                 }
-                descricaoPlaneta.appendChild(createElement("h2"));
-                descricaoPlaneta.appendChild(createElement("p"));
-                image.appendChild(createElement("img"));
-                tempoDistance.appendChild(createElement("spanTemp"));
-                distanceInfo.appendChild(createElement("spanDistance"));
-                opcao[i].classList.add("after");
+                descriptionCrew.appendChild(createElement("h3"));
+               descriptionCrew.appendChild(createElement("h2"));
+               descriptionCrew.appendChild(createElement("p"));
+                imgCrew.appendChild(createElement("img"));
+
+                bolinhas[i].classList.add("after");
                 if (contadoraAnterior != undefined) {
-                    opcao[contadoraAnterior].classList.remove("after");
+                    bolinhas[contadoraAnterior].classList.remove("after");
                 }
                 contadoraAnterior = i;
             });
