@@ -2,7 +2,7 @@ const url = "https://pedro2862.github.io/jsonData.github.io/data.json";
 let descriptionCrew = document.querySelector(".description-crew");
 let imgCrew = document.querySelector(".img-people");
 let bolinhas = document.querySelectorAll(".bolinha");
-console.log(bolinhas[0].classList);
+
 
 
 fetch(url)
@@ -10,8 +10,8 @@ fetch(url)
     .then(function (data) {
         let dados = data.crew;
         let contadoraAnterior;
-        for (let i = 0; i < bolinhas.length; i++) {
-
+        for (let i = 0; i < dados.length; i++) {
+            console.log(dados[i])
             function createElement(element) {
 
                 if (element == "h2") {
@@ -45,7 +45,7 @@ fetch(url)
             }
 
             bolinhas[i].addEventListener("click", () => {
-                if (bolinhas[0].classList == "bolinha","after" && i == 1) {
+                if (bolinhas[0].classList == "bolinha","after" && i >= 1) {
                     bolinhas[0].classList.remove("after");
                     console.log("removeu")
                 }
