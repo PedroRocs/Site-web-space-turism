@@ -648,22 +648,22 @@ PAGINA CREW COMMANDER
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 3fr 2fr;
     align-items: flex-end;
-    column-gap: 60px;
-    padding: 30px 90px 0px 90px;
+    column-gap: 10px;
+    padding: 30px 130px 0px 130px;
+    justify-content: center;
 }
 
 .info-people {
     grid-area: info-people;
-    row-gap: 90px;
+    row-gap: 30px;
     display: flex;
     flex-direction: column;
+
 }
 
 .img-people {
     grid-area: image-people;
     display: flex;
-    justify-content: flex-end;
-
 }
 
 .img-people img {
@@ -671,13 +671,11 @@ PAGINA CREW COMMANDER
     width: 500px
 }
 
-
 .description-crew {
-    height: 430px;
+    height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .description-crew h3 {
@@ -685,7 +683,6 @@ PAGINA CREW COMMANDER
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
     margin-bottom: 32px;
-    margin-top: 90px;
     animation: 1s animation;
     color: rgba(255, 255, 255, 0.5);
 
@@ -721,8 +718,6 @@ PAGINA CREW COMMANDER
     border-radius: 50%;
 }
 
-
-
 .bolinha.after {
     background-color: #fff;
 }
@@ -738,6 +733,10 @@ PAGINA CREW COMMANDER
         grid-template-columns: 100%;
         place-items: center;
         padding: 0;
+    }
+
+    .info-people {
+        row-gap: 20px;
     }
 
     .description-crew {
@@ -773,12 +772,46 @@ PAGINA CREW COMMANDER
 }
 
 @media only screen and (max-width:454px) {
+
+.description-crew{
+    height: auto;
+
+}
+    .description-crew p {
+        width: 100%;
+        padding: 0;
+    }
+
     .description-crew h2 {
         text-align: center;
-        font-size: 2em;
+        font-size: 1.6em;
     }
 
     .description-crew h3 {
         font-size: 1.4em;
     }
+
+    .principal-crew {
+        grid-template-areas:
+            'cabecalho'
+            'image-people'
+            'info-people';
+        padding: 0 20px;    
+    }
+
+    .info-people {
+        flex-direction: column-reverse;
+        row-gap: 0px;
+    }
+
+    .content-pont {
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+    }
+
+    .img-people {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
 }
