@@ -59,6 +59,14 @@ body {
     margin: 0 auto;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+    display: none;
+}
+
+
+
 #corpo-destination {
     background-image: url("/assets/destination/background-destination-desktop.jpg");
     background-size: cover;
@@ -814,4 +822,85 @@ PAGINA CREW COMMANDER
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
+}
+
+/* TECHNOLOGY */
+#background-technology{
+    height: 100%;
+    background-image: url("/assets/technology/background-technology-desktop.jpg");
+    background-size: auto;
+}
+.principal-technology{
+    display: grid;
+    grid-template-areas: 
+    'cabecalho cabecalho cabecalho'
+    'progresso description img'
+    'progresso description img'
+    ;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 50px 0px 50px 30px;
+}
+
+.cabecalho-destino{
+    grid-area: cabecalho;
+    display: flex;
+    padding-left: 70px;
+}
+
+.progress-technology{
+    grid-area: progresso;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    row-gap: 40px;
+}
+
+.bolinha-big{
+    
+    border: #fff 1px solid;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 32px;
+
+
+}
+
+.description-technology{
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 0 50px;
+    
+}
+
+.description-technology h2 {
+    color: #D0D6F9;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-bottom: 10px;
+}
+
+.description-technology h1{
+    font-size: 56px;
+    font-family: 'Bellefair', serif;
+}
+
+.description-technology p{
+    font-size: 18px;
+    color: #D0D6F9;
+    width: 80%;
+    line-height: 32px;
+}
+
+
+.img-technology{
+    grid-area: img;
 }
