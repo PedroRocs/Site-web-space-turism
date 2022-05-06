@@ -11,7 +11,6 @@
 
 
 
-
 h1,
 h2,
 p {
@@ -824,11 +823,15 @@ PAGINA CREW COMMANDER
 
 }
 
-/* TECHNOLOGY */
+/* 
+========================== > 
+PAGINA TECHNOLOGY-CAPSULE
+ < ========================
+*/
 #background-technology{
-    height: 100%;
+   
     background-image: url("/assets/technology/background-technology-desktop.jpg");
-    background-size: auto;
+    background-size: cover;
 }
 .principal-technology{
     display: grid;
@@ -837,7 +840,7 @@ PAGINA CREW COMMANDER
     'progresso description img'
     'progresso description img'
     ;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     padding: 50px 0px 50px 30px;
 }
 
@@ -857,7 +860,6 @@ PAGINA CREW COMMANDER
 }
 
 .bolinha-big{
-    
     border: #fff 1px solid;
     border-radius: 50%;
     width: 80px;
@@ -867,8 +869,11 @@ PAGINA CREW COMMANDER
     justify-content: center;
     color: #fff;
     font-size: 32px;
+}
 
-
+.bolinha-big.active{
+    background-color: #fff;
+    color: #0B0D17;
 }
 
 .description-technology{
@@ -876,9 +881,8 @@ PAGINA CREW COMMANDER
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     padding: 0 50px;
-    
+    row-gap: 20px;
 }
 
 .description-technology h2 {
@@ -896,11 +900,68 @@ PAGINA CREW COMMANDER
 .description-technology p{
     font-size: 18px;
     color: #D0D6F9;
-    width: 80%;
     line-height: 32px;
 }
 
-
 .img-technology{
     grid-area: img;
+    
 }
+
+
+/* RESPONSIVIDADE TECHNOLOGY  */
+@media only screen and (max-width:1084px){
+
+    .principal-technology{
+        grid-template-areas: 
+        'cabecalho cabecalho cabecalho'
+        'img img img'
+        'progresso progresso progresso'
+        'description description description'
+        ;
+        grid-template-columns: 16fr;
+        row-gap: 50px;
+        padding: 90px 0;
+    }
+
+    .img-technology{
+        width: 100%;
+    }
+
+    .img-technology img {
+        width: 100%;
+    }
+
+    .progress-technology{
+        flex-direction: row;
+        column-gap: 30px;
+    }
+
+    .description-technology{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 90px;
+    }
+
+    .cabecalho-destino{
+        padding: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width:400px){
+    
+    .description-technology{
+        padding: 0 40px;
+    }
+
+    .description-technology h1{
+        font-size: 2.3em;
+        
+    }
+}
+/* 
+========================== > 
+*/
