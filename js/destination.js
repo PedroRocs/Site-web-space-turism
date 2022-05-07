@@ -16,7 +16,7 @@ fetch(url)
                     descricaoPlaneta.innerHTML = "";
                     let h2 = document.createElement(element);
                     h2.textContent = dados[i].name;
-                    return h2
+                    return h2;
                 }
                 if (element == "p") {
 
@@ -25,61 +25,58 @@ fetch(url)
                     return p;
                 }
                 if (element == "spanTemp") {
-                    document.querySelector(".info-add").remove()
+                    document.querySelector(".info-add").remove();
                     let span = document.createElement("span");
                     span.classList.add("info-add");
-              
-                    span.textContent=dados[i].travel;
+
+                    span.textContent = dados[i].travel;
                     return span;
-                    }
+                }
                 if (element == "spanDistance") {
-                    document.querySelector(".info-add").remove()
-                        let span = document.createElement("span");
-                        span.classList.add("info-add")
-                        span.textContent=dados[i].distance;
-                        console.log(span);
-                        return span;
-                        
-                        }
+                    document.querySelector(".info-add").remove();
+                    let span = document.createElement("span");
+                    span.classList.add("info-add");
+                    span.textContent = dados[i].distance;
+                    console.log(span);
+                    return span;
+
+                }
 
                 if (element == "div") {
                     let div = document.createElement(element);
-                    return div
+                    return div;
                 }
 
                 if (element == "img") {
                     image.innerHTML = "";
                     let img = document.createElement(element);
                     img.src = dados[i].images.png;
-                    return img
+                    return img;
                 }
             }
 
             opcao[i].addEventListener("click", () => {
-                if (opcao[0].classList == "after" && i == 1) {
-                    opcao[0].classList.remove("after");
+                if (contadoraAnterior == i) {
+                    return false;
+                } else {
+                    if (opcao[0].classList == "after" && i == 1) {
+                        opcao[0].classList.remove("after");
+                    }
+
+                    descricaoPlaneta.appendChild(createElement("h2"));
+                    descricaoPlaneta.appendChild(createElement("p"));
+                    image.appendChild(createElement("img"));
+                    tempoDistance.appendChild(createElement("spanTemp"));
+                    distanceInfo.appendChild(createElement("spanDistance"));
+                    opcao[i].classList.add("after");
+                    if (contadoraAnterior != undefined) {
+                        opcao[contadoraAnterior].classList.remove("after");
+                    }
+                    contadoraAnterior = i;
                 }
-                descricaoPlaneta.appendChild(createElement("h2"));
-                descricaoPlaneta.appendChild(createElement("p"));
-                image.appendChild(createElement("img"));
-                tempoDistance.appendChild(createElement("spanTemp"));
-                distanceInfo.appendChild(createElement("spanDistance"));
-                opcao[i].classList.add("after");
-                if (contadoraAnterior != undefined) {
-                    opcao[contadoraAnterior].classList.remove("after");
-                }
-                contadoraAnterior = i;
             });
-        }})
+        }
+    })
     .catch(function (error) {
         window.innerHTML = "Recarregue a pegina";
     });
-
-
-    
-
-       
-
-    
-
-   
