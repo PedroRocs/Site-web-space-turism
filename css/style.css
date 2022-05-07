@@ -9,8 +9,6 @@
     color: white;
 }
 
-
-
 h1,
 h2,
 p {
@@ -29,6 +27,17 @@ li {
     list-style: none;
 }
 
+
+/* ANIMAÇÃO */
+@keyframes animation {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
 
 
 
@@ -63,8 +72,6 @@ body::-webkit-scrollbar {
     background-color: #fff;
     display: none;
 }
-
-
 
 #corpo-destination {
     background-image: url("/assets/destination/background-destination-desktop.jpg");
@@ -171,9 +178,7 @@ body::-webkit-scrollbar {
     transition: 0.4s;
 }
 
-
 /* RESPONSIVIDADE NAVBAR  */
-
 @media screen and (max-width: 768px) {
     .navbar {
         margin: 0;
@@ -203,7 +208,6 @@ body::-webkit-scrollbar {
         width: 30%;
         display: flex;
         justify-content: end;
-
     }
 
     .hamburguer {
@@ -250,10 +254,8 @@ body::-webkit-scrollbar {
         height: 40px;
         padding: 0px 30px;
         cursor: pointer;
-
     }
 }
-
 
 .landing-page {
     width: 100%;
@@ -261,8 +263,6 @@ body::-webkit-scrollbar {
     grid-template-columns: 3fr 2fr;
     min-height: 90vh;
     padding-bottom: 90px;
-
-
 }
 
 .description {
@@ -285,8 +285,6 @@ body::-webkit-scrollbar {
     font-family: 'Bellefair', serif;
     font-size: 150px;
     font-weight: 300;
-
-
 }
 
 .description p {
@@ -356,7 +354,6 @@ body::-webkit-scrollbar {
     .description p {
         text-align: center;
         width: calc(100% - 130px);
-
     }
 
     .button-explorer {
@@ -403,27 +400,12 @@ body::-webkit-scrollbar {
         width: 250px;
         height: 250px;
     }
-
-
-
 }
-
 /* 
 ==================> 
 PAGINA DESTINATION 
  <=================  
  */
-
-@keyframes animation {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 .principal {
     display: grid;
     grid-template-areas:
@@ -432,13 +414,9 @@ PAGINA DESTINATION
     grid-template-rows: 2fr 5fr;
     grid-auto-flow: column;
     grid-template-columns: 540px 500px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 0 10px;
-
-
-
-
 }
 
 .cabecalho-destino {
@@ -452,7 +430,6 @@ PAGINA DESTINATION
     font-size: 1.3em;
     letter-spacing: 4.22px;
     font-family: 'Barlow Condensed', sans-serif;
-
 }
 
 .cabecalho-destino span {
@@ -482,8 +459,6 @@ PAGINA DESTINATION
 .planet img {
     width: calc(100%-300px);
     animation: 1.5s animation;
-
-
 }
 
 .nome-planet h2 {
@@ -492,7 +467,6 @@ PAGINA DESTINATION
     margin-right: 15px;
     color: #D0D6F9;
     cursor: pointer;
-
 }
 
 .nome-planet h2::after {
@@ -531,7 +505,6 @@ PAGINA DESTINATION
     color: #D0D6F9;
     line-height: 32px;
     animation: 1.5s animation;
-
 }
 
 .info-adicionais {
@@ -539,7 +512,6 @@ PAGINA DESTINATION
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 30px 0;
-
 }
 
 .info-adicionais div {
@@ -547,7 +519,6 @@ PAGINA DESTINATION
     flex-direction: column;
     row-gap: 20px;
     animation: 1.5s animation;
-
 }
 
 .info-adicionais span:nth-child(1) {
@@ -556,8 +527,6 @@ PAGINA DESTINATION
     letter-spacing: 2.36px;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-
-
 }
 
 .info-adicionais span:nth-child(2) {
@@ -567,10 +536,13 @@ PAGINA DESTINATION
     text-transform: uppercase;
     transition: 1s;
     animation: 1.5s animation;
-
 }
 
-
+/* 
+<==========================
+RESPONSIVIDADE DESTINATION 
+===========================>
+ */
 @media only screen and (max-width:1074px) {
 
     .principal {
@@ -596,22 +568,18 @@ PAGINA DESTINATION
 
     .nome-planet {
         margin-top: 50px;
-
     }
 
     .info-adicionais {
         width: 100%;
         align-items: center;
         justify-content: center;
-
     }
 
     .info-adicionais div {
         width: 100%;
         align-items: center;
         justify-content: center;
-
-
     }
 }
 
@@ -655,9 +623,7 @@ PAGINA CREW COMMANDER
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 3fr 2fr;
     align-items: flex-end;
-    column-gap: 10px;
-    padding: 30px 130px 0px 130px;
-    justify-content: center;
+    padding: 30px 50px 0px 50px;
 }
 
 .info-people {
@@ -665,7 +631,6 @@ PAGINA CREW COMMANDER
     row-gap: 30px;
     display: flex;
     flex-direction: column;
-
 }
 
 .img-people {
@@ -692,7 +657,6 @@ PAGINA CREW COMMANDER
     margin-bottom: 32px;
     animation: 1s animation;
     color: rgba(255, 255, 255, 0.5);
-
 }
 
 .description-crew h2 {
@@ -709,7 +673,6 @@ PAGINA CREW COMMANDER
     width: calc(100% - 140px);
     padding: 0 10px;
     font-weight: lighter;
-    animation: 1s animation
 }
 
 .content-pont {
@@ -729,9 +692,12 @@ PAGINA CREW COMMANDER
     background-color: #fff;
 }
 
-
+/* 
+<============================
+RESPONSIVIDADE CREW-COMMANDER
+=============================> 
+ */
 @media only screen and (max-width:1243px) {
-
     .principal-crew {
         grid-template-areas:
             'cabecalho'
@@ -829,10 +795,10 @@ PAGINA TECHNOLOGY-CAPSULE
  < ========================
 */
 #background-technology{
-   
     background-image: url("/assets/technology/background-technology-desktop.jpg");
     background-size: cover;
 }
+
 .principal-technology{
     display: grid;
     grid-template-areas: 
@@ -841,13 +807,12 @@ PAGINA TECHNOLOGY-CAPSULE
     'progresso description img'
     ;
     grid-template-columns: 1fr 3fr 1fr;
-    padding: 50px 0px 50px 30px;
+    padding: 50px 0px 50px 80px;   
 }
 
 .cabecalho-destino{
     grid-area: cabecalho;
     display: flex;
-    padding-left: 70px;
 }
 
 .progress-technology{
@@ -874,6 +839,7 @@ PAGINA TECHNOLOGY-CAPSULE
 .bolinha-big.active{
     background-color: #fff;
     color: #0B0D17;
+    animation: 1s animationBolinha;
 }
 
 .description-technology{
@@ -890,22 +856,29 @@ PAGINA TECHNOLOGY-CAPSULE
     font-size: 16px;
     letter-spacing: 2.7px;
     margin-bottom: 10px;
+    animation: 1s animation;
 }
 
 .description-technology h1{
     font-size: 56px;
     font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    animation: 1s animation;
 }
 
 .description-technology p{
     font-size: 18px;
     color: #D0D6F9;
     line-height: 32px;
+    animation: 1s animation;
 }
 
 .img-technology{
     grid-area: img;
-    
+}
+
+.img-technology img {
+    animation: 1s animation;
 }
 
 
@@ -947,8 +920,6 @@ PAGINA TECHNOLOGY-CAPSULE
     .cabecalho-destino{
         padding: 20px;
     }
-
-
 }
 
 @media only screen and (max-width:400px){
@@ -958,8 +929,7 @@ PAGINA TECHNOLOGY-CAPSULE
     }
 
     .description-technology h1{
-        font-size: 2.3em;
-        
+        font-size: 2.3em;   
     }
 }
 /* 
