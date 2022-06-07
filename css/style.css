@@ -860,7 +860,7 @@ PAGINA TECHNOLOGY-CAPSULE
 }
 
 .description-technology h1{
-    font-size: 56px;
+    font-size: 50px;
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
     animation: 1s animation;
@@ -879,6 +879,8 @@ PAGINA TECHNOLOGY-CAPSULE
 
 .img-technology img {
     animation: 1s animation;
+    width: 500px;
+    height: 500px;
 }
 
 
@@ -897,12 +899,9 @@ PAGINA TECHNOLOGY-CAPSULE
         padding: 90px 0;
     }
 
-    .img-technology{
-        width: 100%;
-    }
-
     .img-technology img {
         width: 100%;
+        height: auto;
     }
 
     .progress-technology{
